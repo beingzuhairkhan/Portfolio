@@ -1,0 +1,42 @@
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    background: hsla(0, 0%, 100%, .05);
+    font-size: larger;
+    
+    
+  }
+  
+  footer div {
+    margin-bottom: 10px;
+   
+  }
+  
+  a{
+    color: #fff;
+    text-decoration: none;
+    
+  }
+  
+  a:hover {
+    color: #007bff;
+  }
+  
+  h3 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+.footer_container{
+    font-size:xx-large;
+    justify-content: space-evenly;
+} 
+.footer_container .social{
+  margin-right: 30px;
+} 
+.copy-right{
+  margin-right: 20px;
+  font-size: large;
+}
