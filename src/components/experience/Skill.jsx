@@ -5,12 +5,17 @@ import { SiJavascript , SiTailwindcss , SiExpress , SiMongodb , SiPostman , SiCa
 import { FaBootstrap } from "react-icons/fa6";
 import { GrMysql } from "react-icons/gr";
 import { BiLogoNetlify } from "react-icons/bi";
-
+import projecticon from "../../assets/skills.png";
 const Skill = () => {
   return (
     // <div id='Skill'>
       <section  >
-        <h1>Skills</h1>
+     <center>
+       <div className="projecticons bounce">
+          <img src={projecticon}  />
+        </div>
+        
+       </center>
       <div className='skill_container'>
        
        <div className='frontend'>
@@ -57,6 +62,7 @@ const Skill = () => {
         </div>
        </div>
        </div>
+       <br/>
       </section>
       // </div>
   

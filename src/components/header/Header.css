@@ -61,6 +61,7 @@ header{
 }
 .me img{
     filter: drop-shadow(0.45em 0.45em 20px #1abc9c);
+
 }
 img{
     /* mix-blend-mode:soft-light;
@@ -88,6 +89,9 @@ img{
 @media screen and (max-width: 1024px) {
     header{
         height: 80vh;
+        display:flex;
+        justify-content:center;
+        
     }
 }
 
@@ -96,7 +100,7 @@ img{
 
  @media screen and (max-width: 600px) {
     header{
-        height: 90vh;
+        height: 95vh;
         
     }
     .socials,.scroll_down{

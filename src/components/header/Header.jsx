@@ -3,6 +3,7 @@ import './Header.css';
 import Cl from './Cl'
 import profile from '../../assets/clip.png'
 import HeaderSocial from './HeaderSocial'
+
 const Header = () => {
   useEffect(() => {
     const script = document.createElement('script');
