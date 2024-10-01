@@ -13,7 +13,7 @@
     width: 100%;
     aspect-ratio: 1/1;
     border-radius: 10px;
-    filter: drop-shadow(0.45em 0.45em 20px #1abc9c);
+    filter: drop-shadow(0.45em 0.45em 20px #00ffff);
     /* filter: blur(1px); */
     backdrop-filter: blur(50px); 
    transform: 1s;

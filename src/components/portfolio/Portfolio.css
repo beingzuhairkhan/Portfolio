@@ -7,10 +7,11 @@
     margin:40px !important;
    
 }
-.projecticons img{
+.projecticons  img{
   width: 100px ;
   height:100px ;
   border-radius:50% ;
+  background-color: transparent !important;
 
 }
 
@@ -102,7 +103,7 @@ html{
 
   
   .slider-controler .slider-arrow {
-    background: #1abc9c;
+    background: #00ffff;
     width: 5rem;
     height: 3rem;
     border-radius:50%;
@@ -121,11 +122,11 @@ html{
   }
   
   .swiper-pagination .swiper-pagination-bullet {
-    filter: drop-shadow(0px 8px 24px #1abc9c);
+    filter: drop-shadow(0px 8px 24px #00ffff);
   }
   
   .swiper-pagination .swiper-pagination-bullet-active {
-    background: #1abc9c;
+    background: #00ffff;
   }
 
   .swiper {

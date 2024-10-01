@@ -1,5 +1,5 @@
 header{
-    height: 100vh;
+    height: 110vh;
     padding-top: 7rem;
     overflow: hidden;
 }
@@ -8,6 +8,7 @@ header{
     height: 100%;
     position: relative;
 }
+
 
 /* CL */
 .cl{
@@ -60,7 +61,7 @@ header{
     
 }
 .me img{
-    filter: drop-shadow(0.45em 0.45em 20px #1abc9c);
+    filter: drop-shadow(0.45em 0.45em 20px #00ffff);
 
 }
 img{
@@ -88,7 +89,7 @@ img{
 
 @media screen and (max-width: 1024px) {
     header{
-        height: 80vh;
+        height: 120vh;
         display:flex;
         justify-content:center;
         
