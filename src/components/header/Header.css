@@ -1,110 +1,34 @@
-header{
-    height: 110vh;
-    padding-top: 7rem;
-    overflow: hidden;
-}
-.header__container{
-    text-align: center;
-    height: 100%;
-    position: relative;
-}
-
-
-/* CL */
-.cl{
-    margin-top: 2.5rem;
-    display: flex;
-    gap: 1.2rem;
-    justify-content: center;
-}
-
-/* SOCIAL MEDIA */
-
-.socials{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-    position: absolute;
-    left: 0;
-    bottom: 3rem;
-}
-
-.socials::after{
-    content: '';
-    width: 1px;
-    height: 2rem;
-    background: var(--color-primary);
-}
-
-/* IMAGE */
-
-.me{
-    /* background-color: var(--color-primary); */
-    width: 18rem;
-    /* height: 40rem !important; */
-    position: absolute;
-    left: calc(50% - 9rem);
-    margin-top: 6rem;
-    /* filter: drop-shadow(0.45em 0.45em 20px #1abc9c); */
-   
-
-}
-
-.pf{
-    height: 20rem ;
-    z-index:20;
-    border-radius: 10px;
-    /* box-shadow: 5px 5px 10px rgba(0, 255, 255, 1); */
-    /* filter: blur(1px); */
-    backdrop-filter: blur(50px);  
-    
-}
-.me img{
-    filter: drop-shadow(0.45em 0.45em 20px #00ffff);
-
-}
-img{
-    /* mix-blend-mode:soft-light;
-    z-index: 2; */
-    overflow-clip-margin: content-box;
-    overflow-x: auto;
-    overflow-y: auto;
-    background-color: #222;
-     /* filter: drop-shadow(0.45em 0.45em 20px #1abc9c); */
-}
-
-/* SCROLL DOWN */
-
-.scroll_down{
-    position: absolute;
-    right: -2rem;
-    bottom: 5rem;
-    transform: rotate(90deg);
-    font-weight: 100;
-    font-size: small;
-}
-
-/* MEDIUM MEDIA QUERY */
-
-@media screen and (max-width: 1024px) {
-    header{
-        height: 120vh;
-        display:flex;
-        justify-content:center;
-        
+@keyframes random-shape {
+    0% {
+      border-radius: 10% 90% 20% 80% / 30% 70% 40% 60%;
     }
-}
-
-
-/* SMALL MEDIA QUERY */
-
- @media screen and (max-width: 600px) {
-    header{
-        height: 95vh;
-        
+    12.5% {
+      border-radius: 50% 50% 70% 30% / 60% 40% 30% 70%;
     }
-    .socials,.scroll_down{
-        display: none;
+    25% {
+      border-radius: 40% 60% 50% 50% / 50% 50% 60% 40%;
     }
-} 
+    37.5% {
+      border-radius: 20% 80% 30% 70% / 40% 60% 70% 30%;
+    }
+    50% {
+      border-radius: 70% 30% 60% 40% / 20% 80% 10% 90%;
+    }
+    62.5% {
+      border-radius: 30% 70% 90% 10% / 50% 50% 20% 80%;
+    }
+    75% {
+      border-radius: 90% 10% 40% 60% / 80% 20% 30% 70%;
+    }
+    87.5% {
+      border-radius: 60% 40% 80% 20% / 30% 70% 50% 50%;
+    }
+    100% {
+      border-radius: 10% 90% 20% 80% / 30% 70% 40% 60%;
+    }
+  }
+  
+  .animate-random-shape {
+    animation: random-shape 30s infinite ease-in-out;
+  }
+  

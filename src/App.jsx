@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react';
+import {useEffect} from 'react'
 import About from './components/about/About';
 import Contact from './components/contact/Contact';
 import Skill from './components/experience/Skill';
@@ -7,16 +7,17 @@ import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import Nav from './components/nav/Nav';
 import Portfolio from './components/portfolio/Portfolio';
-import StarCanvas from './components/background/Star'  // Make sure this path is correct
-
+import Aos from 'aos'
+import "aos/dist/aos.css"
 const App = () => {
-  return (
-    <div style={{ position: 'relative', overflow: 'hidden'}}>
-      {/* Star animation background */}
-      <StarCanvas />
 
-      {/* Main content */}
-      <div style={{ position: 'relative', zIndex: 1, color: 'white'  }}>
+  useEffect(()=>{
+    Aos.init()
+  },[])
+  
+  return (
+    <div className="bg-black text-white" >
+    
         <Nav />
         <Header />
         <About />
@@ -24,7 +25,7 @@ const App = () => {
         <Portfolio />
         <Contact />
         <Footer />
-      </div>
+       
     </div>
   );
 };
